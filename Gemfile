@@ -1,14 +1,14 @@
-# frozen_string_literal: true
+source "https://rubygems.org"
 
-source 'https://rubygems.org'
+# github-pages Gem keeps you in sync with the environment used by traditional gh-pages build.
+# See versions, https://pages.github.com/versions/
+gem "github-pages"
 
-unless Gem.win_platform?
-  gem 'image_optim'
-  gem 'image_optim_pack'
-end
-gem 'csv'
-gem 'jekyll'
-gem 'mini_magick'
-gem 'rake'
+# If you end up with issues running github-pages on your local machine, 
+# delete gem github-pages and uncomment the gems below
 
-gem 'webrick', '~> 1.7'
+# gem 'jekyll'
+# gem 'webrick'
+# gem 'logger'
+# gem 'base64'
+# gem 'ostruct'
